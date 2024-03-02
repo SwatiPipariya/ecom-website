@@ -3,13 +3,17 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./SimpleSlider.css";
+import blog8 from "../Images/blog8.jpg";
+import blog2 from "../Images/blog2.jpg";
+import blog3 from "../Images/blog3.jpg";
+
+
 
 function SimpleSlider() {
-  const imageUrls = [
-    "https://images.pexels.com/photos/6634174/pexels-photo-6634174.jpeg?auto=compress&cs=tinysrgb&w=300",
-    "https://images.pexels.com/photos/15559731/pexels-photo-15559731/free-photo-of-a-woman-sitting-outdoors.jpeg?auto=compress&cs=tinysrgb&w=300",
-    "https://images.pexels.com/photos/15420967/pexels-photo-15420967/free-photo-of-woman-wearing-red-dress-and-crown-in-front-of-a-building.jpeg?auto=compress&cs=tinysrgb&w=300"
-  ];
+
+  const imageUrls = [blog8, blog2, blog3];
+
+
 
   const settings = {
     dots: true,
@@ -19,21 +23,39 @@ function SimpleSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     waitForAnimate: false,
-    centerMode: true, 
+    centerMode: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    
+    arrow: true,
   };
 
   return (
-    <div className="slider-container" >
+    <div className="slider-container">
       <Slider {...settings}>
-        {imageUrls.map((url, index) => (
-          <div key={index}>
-            <img src={url} alt={`Image ${index + 1}`} style={{display: "flex", justifyContent: "center", height: "800px", width: "900px"}} />
+        <div >
+          <img
+            src={blog8}
+            alt="Pic 1"
             
-          </div>
-        ))}
+            className="w-full h-full flex justify-center items-center"
+          />
+        </div>
+        <div>
+          <img
+            src={blog2}
+            alt="Pic 2"
+            className="w-full h-full flex justify-center items-center"
+
+          />
+        </div>
+        <div >
+          <img
+            src={blog3}
+            alt="Pic 3"
+            className="w-full h-full flex justify-center items-center"
+
+          />
+        </div>
       </Slider>
     </div>
   );

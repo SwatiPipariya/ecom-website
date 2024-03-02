@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between font-sans text-xl items-center font-semibold bg-gray-200 py-4 px-6">
+    <nav className="flex justify-between font-sans text-xl items-center  py-4 px-6">
       {/* Logo on the left */}
       <div className="flex items-center">
         <img src="/path/to/your/logo.png" alt="Logo" className="h-8 mr-2" />
