@@ -4,7 +4,7 @@ import SimpleSlider from '../Slider/SimpleSlider'
 function Home() {
   return (
     <div>
-      Home
+      {/* Home */}
       <SimpleSlider />
     </div>
   )

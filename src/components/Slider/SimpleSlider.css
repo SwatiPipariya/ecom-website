@@ -1,8 +1,7 @@
-/* .slider-container {
-    display: flex;
-    justify-content: center; 
+.slider-container {
    
-  }
-   */
-
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
