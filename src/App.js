@@ -10,7 +10,7 @@ import Contact from './components/Contact/Contact'
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className='sumo'>
         <Navbar />
             <Routes>
             <Route path='/' exact Component={Home} />
